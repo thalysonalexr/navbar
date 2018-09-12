@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-weight: lighter;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    width: 100%;
+    background-color: #5892ef;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+}
+
+.brand{
+    margin-right: 2%;
+    color: #fcfcfc;
+    display: flex;
+    align-items: center;
+}
+
+.header .navigator{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.header .navigator .nav-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nav-item{
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    transition: transform 200ms ease;
+    padding: 0 3%;
+    border-radius: 7px;
+}
+
+.nav-item:last-child{
+    margin-right: 0;
+}
+
+.nav-link{
+    font-family: 'Dosis', sans-serif;
+    color: #fcfcfc;
+    font-size: 1.2em;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.nav-link:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.search .search-wrapper{
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    width: 300px;
+    padding: 0;
+    background-color: #ebeff4;
+    padding: 0 0 0 5%;
+    box-shadow: 1px 1px 2px #4d4e4f;
+}
+
+.search-wrapper, .ipt-search{
+    background-color: transparent;
+    color: #4d4e4f;
+    padding: 5% 0;
+    border-radius: 7px;
+    outline: 0;
+}
+
+.ipt-search:focus .search-wrapper{
+    background-color: #fcfcfc;
+}
+
+.wrapper-ipt-search{
+    width: 100%;
+}
+
+.ipt-search{
+    font-size: 1em;
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-search{
+    cursor: pointer;
+    background-color: transparent;
+    width: 20%;
+    outline: 0;
+}
+
+.fa-search{
+    color: #5892ef;
+    transition: transform 200ms ease;
+}
+
+.btn-search:hover .fa-search{
+    transform: scale(1.5, 1.5);
+}
+
+.header .search{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.dropdown{
+    background-color: #fcfcfc;
+    width: 150px;
+    border-radius: 7px;
+    position: absolute;
+    box-shadow: 1px 1px 2px #4d4e4f;
+    margin-top: 1vh;
+}
+
+.dropdown .drop-link{
+    padding: 7%;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    color: #2e2e2e;
+    transition: 200ms ease;
+}
+
+.dropdown .drop-link:hover{
+    background-color: #dddddd;
+    border-radius: 7px;
+}
+
+.collapse{
+    display: none;
+}
+
+.show{
+    display: inline-block;
+}
+
+.btn-dropdown{
+    padding: 10%;
+    border-radius: 7px;
+    color: #fcfcfc;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2em;
+    box-shadow: 1px 1px 2px #4d4e4f;
+    background-color: #2a5396;
+    outline: 0;
+}
